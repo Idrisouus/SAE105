@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4+4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="saé105.css"> 
+    <link rel="icon" types="image/png" href="IMAGE/8.png">
+</head>
+
+<body>
+    
+        <header class="header">
+        <h1><span class="blue">4</span>+<span class="pink">4</span></h1>
+        <h2> Le 4+4 edition WEB tant attendu est enfin disponible. Il a été spécialement conçu pour connaitre les gouts du DON PATRON en personne! Le site a un design simple et authentique. Plus d’infos en bas.</h2>
+        </header>
+    
+        <div class="liste-musiques"></div>
+        <script src="data.js"></script>
+        <script src="script.js"></script>
+    
+<script>
+        // Q3 Afficher le tableau analogies dans la console
+        console.log(data);
+
+        // Q4 Afficher chaque analogie + Q6 Créer une variable numCase
+        var numCase = 1;
+        data.forEach(function(item, index) {
+        
+        // Affichage de chaque case du tableau, appelée analogie 
+        console.log("Case " + numCase+" musique " + item.musiques);
+        console.log("<section><h2>" + item.musiques + "</h2><p>" + item.descriptionsMusiques + "</p></section>");
+        numCase++;
+
+        // Q5 Afficher un bloc HTML pour chaque analogie
+        //document.querySelector('.liste-analogies').innerHTML = document.querySelector('.liste-analogies').innerHTML + "<section><h2>Si j’étais " + analogie + ", je serais [une valeur de l’analogie].</h2></section>";
+        document.querySelector('.liste-musiques').innerHTML += `
+        <section>
+        <img class= "Image" src="${item.cover}" alt="${item.musiques}">
+        <h2 class= "Nom">${item.musiques}</h2>
+        <a href="${item.youtubelink}" target="_blank"> <h3 class= "titre">${item.titre}</h3></a>
+        <p class= "minitexte">${item.descriptionsMusiques}</p>
+        <audio id="audioPlayer${index}" src="${item.audioFile}"></audio>
+        <button id="playAudioButton${index}" class="playbutton">▶️</button>
+        </section> `    
+            });
+</script>
+    
+        <div class="Formulaire"><form id="Formulaire">
+            <p>À ton tour de balancer un son ! 🔥</p>
+        
+        <label for="titre">Titre de la musique :</label>
+        <input type="text" id="titre" name="titre">
+          
+        <label for="lien">Lien de la musique:</label>
+        <input type="text" id="lien" name="lien">
+         
+        <br><label for="description">Description de la musique:</label><br>
+        <br><textarea id="description" name="description" rows="4" required=""></textarea><br>
+          
+        <br><button type="button" id="submitBtn">Envoyer</button></form><br>
+        </div>
+    
+<footer>
+            
+        <p>Tout droits sans musiques réservés au DON PATRON. Guide réalisé Par le DON PATRON. Reproduction interdite.</p>
+        
+        <button id="crédits">Afficher les crédits</button>
+        <button id="conditions">Afficher les conditions Générales d'utilisations</button>
+            
+        <div class="creditstext">
+            <p>Image de fond : "Idrissa"</p>
+            <p>Image artiste : "Idrissa"</p>
+            <p>Typographie : "Google Font"</p>
+            <p>Artistes : "Keeqaid","Jhus","Guy2bezbar","Landy","Shay","Adèle Castillon","Tyla","Tems"</p>
+            <p>Sons: "Youtube"</p>
+        </div>
+        
+        <div class="conditionstext">
+                
+        <p>GESTION DES DONNEES PERSONNELLES : "Le Site respecte la réglementation en matière de protection des données personnelles, notamment le RGPD". "Les informations collectées sont traitées conformément à notre Politique de confidentialité".</p>
+        <p>RESPONSABILITE DE L'UTILISATEUR : "En utilisant le Site, vous vous engagez à : Ne pas utiliser le Site à des fins illicites, frauduleuses ou malveillantes. Ne pas perturber le bon fonctionnement du Site ou compromettre sa sécurité.</p>
+        <p>DROITS DE COPIE ET RESTRICTIONS : "Vous êtes autorisé à consulter, télécharger et imprimer des parties du contenu du Site à des fins strictement personnelles et non commerciales, sous réserve de respecter les droits d'auteur et toute autre mention de propriété figurant sur le contenu.</p>
+                
+        </div>
+        
+</footer>
+
+</body>
+</html>

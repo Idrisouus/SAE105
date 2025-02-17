@@ -1,0 +1,156 @@
+  body { /* Ajout Police et image de fond */
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0;
+      color: whitesmoke;
+    background-image: url("IMAGE/fond1.png"); 
+  }    
+
+  
+  .header h1 {  /* Placement et taille du titre */ 
+    text-align: center;
+    font-size: 9.3rem;
+    margin-bottom: 50px;
+  } 
+  
+ 
+  .blue {   /* Couleur du 3 */
+    color: rgb(105, 225, 255);
+    text-shadow: 1px 1px 2px #000, 0 0 1em rgb(105, 225, 255), 0 0 0.2em ;
+  }
+  
+
+  .pink {  /* Couleur du 3 */
+    color: rgba(255, 131, 224, 0.923); 
+    text-shadow: 1px 1px 2px #000, 0 0 1em rgba(255, 131, 224, 0.923), 0 0 0.2em ;
+  }
+
+  
+  .header h2 { /* Placement et taille du sous titre */
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  } 
+
+
+  .Nom { /* Placement taille et couleur des Chanteurs */
+    margin-top: 60px; 
+    font-size: 1.8rem; 
+    text-align: center;
+    color: rgb(105, 225, 255);
+    text-shadow: 1px 1px 2px #000, 0 0 1em rgb(105, 225, 255), 0 0 0.2em  rgb(105, 225, 255)
+  }
+  
+  
+  .titre{ /* Placement taille et couleur du titre des chansons */
+    font-size: 0.9rem; 
+    text-align: center;
+    color:  rgba(255, 131, 224, 0.923);
+    text-shadow: 1px 1px 2px #000, 0 0 1em rgba(255, 131, 224, 0.923), 0 0 0.2em  rgba(255, 131, 224, 0.923)
+  }
+  
+
+  .titre:hover { /* Animation sur l'image */
+    transform: scale(1.1); 
+    transition: transform 0.4s ease; 
+  } 
+
+  .Image  { /* Placement et taille de l'image */
+    width: 40%;
+    max-width: 900px;
+    max-height: 710px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    margin-top: 350px;
+  }
+
+
+  .Image:hover { /* Animation sur l'image */
+    transform: scale(1.1); 
+    transition: transform 0.4s ease; 
+  }  
+
+  
+  .minitexte { /* Placement et taille du descriptif */
+    text-align: center;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    max-width: 1000px;  
+    margin: 0 auto;    
+    padding: 20px;  
+  }
+  
+  
+  .playbutton { /* Placement et taille du bouton play */
+    display: block;
+    margin: auto;
+    width: 30px;
+  }
+
+
+  .Formulaire { /* Placement et taille du formulaire */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+  }
+
+  
+  .Formulaire p { /* Placement taille et couleur du texte formulaire */
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1rem;
+    color: yellow;
+    text-shadow: 1px 1px 2px #000, 0 0 1em yellow, 0 0 0.2em ;
+  }
+
+   
+  
+  label[for="description"] { /* Placement et taille du label */
+    display: block;        
+    text-align: center;     
+    margin-top: 90px; 
+  }
+  
+  
+  
+  textarea { /* Placement et taille du textarea */
+    display: block;           
+    width: 80%;                
+    height: 150px;            
+    margin: 20px auto;      
+    padding: 10px;                  
+    resize: none;             
+    box-sizing: border-box;   
+   }
+
+
+  button { /* Placement et taille du button */
+    display: block;    
+    margin: 20px auto;  
+  }
+
+
+  footer  { /* Placement des boutons crédits et conditions*/
+    text-align: center;
+    margin-bottom: 250px;
+  } 
+
+
+  footer p { /* Placement et police du footer */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+  }
+
+  .creditstext, .conditionstext { /* Masquage et transition du crédits+conditions */
+    max-height: 0;  
+    overflow: hidden;
+    transition: max-height 0.5s ease;  
+  }
