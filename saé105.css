@@ -1,5 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.backHome { /* Pour remonter en haut */
+  width: 4vw;
+  position: fixed;
+  bottom: 3vw;
+  right: 3vw;
+  cursor: pointer;
+  z-index: 1;
+}
+ 
   body { /* Ajout Police et image de fond */
-    font-family: "Sixtyfour", sans-serif;
+    font-family: "Impact", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -13,7 +26,7 @@
   
   .header h1 {  /* Placement et taille du titre */ 
     text-align: center;
-    font-size: 9.3rem;
+    font-size: 11.3rem;
     margin-bottom: 50px;
   } 
   
@@ -30,16 +43,17 @@
   }
 
   
-  .header h2 { /* Placement et taille du sous titre */
+  .header h2 {
     text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-  } 
+    font-size: 1.6rem;
+    margin: 0 auto 20px auto; /* haut auto bas auto */
+    max-width: 600px; /* à adapter selon le design */
+  }
 
 
   .Nom { /* Placement taille et couleur des Chanteurs */
     margin-top: 60px; 
-    font-size: 1.8rem; 
+    font-size: 2.6rem; 
     text-align: center;
     color: rgb(105, 225, 255);
     text-shadow: 1px 1px 2px #000, 0 0 1em rgb(105, 225, 255), 0 0 0.2em  rgb(105, 225, 255)
@@ -47,7 +61,7 @@
   
   
   .titre{ /* Placement taille et couleur du titre des chansons */
-    font-size: 0.9rem; 
+    font-size: 2em; 
     text-align: center;
     color:  rgba(255, 131, 224, 0.923);
     text-shadow: 1px 1px 2px #000, 0 0 1em rgba(255, 131, 224, 0.923), 0 0 0.2em  rgba(255, 131, 224, 0.923)
@@ -78,7 +92,7 @@
   
   .minitexte { /* Placement et taille du descriptif */
     text-align: center;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
     line-height: 1.6;
     max-width: 1000px;  
@@ -106,7 +120,7 @@
   .Formulaire p { /* Placement taille et couleur du texte formulaire */
     text-align: center;
     margin-bottom: 50px;
-    font-size: 1rem;
+    font-size: 2rem;
     color: yellow;
     text-shadow: 1px 1px 2px #000, 0 0 1em yellow, 0 0 0.2em ;
   }
@@ -145,7 +159,7 @@
 
 
   footer p { /* Placement et police du footer */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'impact';
     text-align: center;
   }
 

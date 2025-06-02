@@ -12,6 +12,14 @@ var data = [
         youtubelink: "https://www.youtube.com/watch?v=p1ED5YEn4aA&pp=ygUHYmFvdWzDqQ%3D%3D"
     },
     {
+        musiques: "📀Jeune Morty📀",
+        descriptionsMusiques: "(Jeune Morty, originaire de Choisy-le-Roi dans le 94, est un rappeur que j’ai découvert par hasard il y'a 2 ans sur Adesanya et franchement depuis c'est un sans faute, j’aime beaucoup ce qu’il fait).",
+        audioFile: "MUSIC/FirstDayOut.mp3",
+        cover: "IMAGE/tshirtjeunemorty.png",
+        titre: "(First Day Out",
+        youtubelink: "https://youtu.be/_ZpMA1aDoFM"
+   },
+    {
         musiques: "🇬🇧Jhus🇬🇧",
         descriptionsMusiques: "(J Hus, originaire du Royaume-Uni, est un rappeur que j’adore écouter. Son morceau Who Told You, en featuring avec Drake, est une pépite sur une instru afrobeat. Les deux artistes se complètent parfaitement. Que dire de plus ? C’est tout simplement parfait).",
         audioFile: "MUSIC/Whotoldyou.mp3",
@@ -20,20 +28,12 @@ var data = [
         youtubelink: "https://youtu.be/FlJQudt_OtU"
     },
     {
-         musiques: "📀Guy2Bezbar📀",
-         descriptionsMusiques: "(Guy2Bezbar, originaire du 18e arrondissement de Paris, est un rappeur que j’ai découvert avec ses premiers sons comme Coco Jojo 90’s. À l’époque, j’avais accroché direct à son style. Juste après il a explosé avec La Calle et Bebeto. Franchement, j’aime beaucoup ce qu’il fait).",
-         audioFile: "MUSIC/CocoJojo90's.mp3",
-         cover: "IMAGE/tshirtguy2.png",
-         titre: "(Coco Jojo 90's)",
-         youtubelink: "https://youtu.be/W7q8Y154op0"
-    },
-    {
-        musiques: "🏍️Landy🏍️",
-        descriptionsMusiques: "(Landy, originaire de Saint-Denis, est un rappeur dont le son Skalape me rappelle ses débuts, avant le succès. J’aime particulièrement ses mélodies accrocheuses et ses refrains efficaces. C’est un artiste avec qui j’ai pu échanger de nombreuses fois et que je suis depuis ses débuts. Il ne m’a jamais déçu.).",
-        audioFile: "MUSIC/skalape.mp3",
-        cover: "IMAGE/tshirtlandy2.png",
-        titre: "(Skalape)",
-        youtubelink: "https://www.youtube.com/watch?v=3z_E2hc8_Hw&pp=ygUHc2thbGFwZQ%3D%3D"         
+        musiques: "💶FenixFlexin💶",
+        descriptionsMusiques: "(Fenix FLexin, américain originaire de Los Angeles , est un rappeur que j’aime particulièrement ses mélodies accrocheuses et ses refrains efficaces. C’est un artiste que je suis depuis ses débuts. Il ne m’a jamais déçu.).",
+        audioFile: "MUSIC/pressure.mp3",
+        cover: "IMAGE/tshirtfenixflexin.png",
+        titre: "(Pressure)",
+        youtubelink: "https://youtu.be/Xq_coBo0shg"         
    },
     {
          musiques: "🫦Shay🫦",
